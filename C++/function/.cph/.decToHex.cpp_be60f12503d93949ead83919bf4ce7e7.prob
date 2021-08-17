@@ -1,0 +1,1 @@
+{"name":"Local: decToHex","url":"e:\\C++\\function\\decToHex.cpp","tests":[{"id":1627213113908,"input":"100","output":""},{"id":1627213130104,"input":"543","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\C++\\function\\decToHex.cpp","group":"local","local":true}
