@@ -1,3 +1,4 @@
+// Squares of a Sorted Array
 // Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
  
@@ -24,5 +25,31 @@
 // Follow up: Squaring each element and sorting the new array is very trivial, could you find an O(n) solution using a different approach?
 
 public class SqaureArray {
-    
+     public static void main(String[] args){
+         
+     }
+
 }
+
+class Solution3 {
+    public int[] sortedSquares(int[] nums) {
+        for(int i=0;i<nums.length;i++){
+            nums[i] = nums[i]*nums[i];
+        }
+        
+        
+        int n = nums.length;
+        for(int i=0; i<n;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(nums[j] > nums[j+1]){
+                    int temp = nums[j];
+                    nums[j] = nums[j+1];
+                    nums[j+1] = temp;
+                }
+            }
+        }
+        return nums;
+    }
+}
+
+
